@@ -12,6 +12,5 @@
       }
     },
     "rewards": {
-      "function": "memory_of_tunguska:consume"
     }
   }
