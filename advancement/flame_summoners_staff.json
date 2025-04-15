@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:consume_item",
+        "conditions": {
+          "item": {
+            "predicates": {
+              "custom_data": "{flame_summoners_staff:true}"
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "memory_of_tunguska:consume"
+    }
+  }
