@@ -1,7 +1,9 @@
 {
     "values": [
         "game:utils/pack_loaded",
-        "game:items/shadowheart",
-        "game:items/lionheart"
+        "game:items/lionheart/tag",
+        "game:items/shadowheart/tag",
+        "game:items/shadowheart/effect",
+        "game:items/lionheart/effect"
     ]
 }

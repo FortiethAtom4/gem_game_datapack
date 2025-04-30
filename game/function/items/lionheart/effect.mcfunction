@@ -1,2 +1,2 @@
 execute at @a[tag=lionheart] run summon area_effect_cloud ~ ~.3 ~ {Particle:{type:"wax_on"},ReapplicationDelay:0,Radius:8f,RadiusPerTick:0f,RadiusOnUse:0f,Duration:10,potion_duration_scale:1f,potion_contents:{custom_effects:[{id:"minecraft:regeneration",amplifier:0,duration:200,show_particles:0b,show_icon:1b }]}}
-schedule function game:items/lionheart 4s
+schedule function game:items/lionheart/lionheart 4s
