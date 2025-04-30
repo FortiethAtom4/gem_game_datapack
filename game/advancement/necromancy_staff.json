@@ -11,5 +11,7 @@
       }
     }
   },
-  "rewards": {}
+  "rewards": {
+    "function":"game:items/necromancy_staff"
+  }
 }
