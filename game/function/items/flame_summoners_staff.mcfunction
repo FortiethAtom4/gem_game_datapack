@@ -1,0 +1,6 @@
+execute at @s run summon blaze ~ ~2 ~ {CustomNameVisible:1b,DeathLootTable:"minecraft:empty",Tags:["summon"],CustomName:{"color":"aqua","italic":false,"text":"Summoned Blaze"},attributes:[{id:"minecraft:follow_range",base:100},{id:"minecraft:max_health",base:100},{id:"minecraft:knockback_resistance",base:1}]}
+give @s blaze_rod[custom_name={"color":"yellow","italic":false,"text":"Flame Summoner's Staff"},lore=[{"color":"white","italic":false,"text":"Summons a powerful blaze to fight for you"},{"color":"white","italic":false,"text":"Periodically drops Unstable Meteorite Fragments"},{"color":"white","italic":false,"text":"Only works in PvE game modes"},{"color":"white","italic":false,"text":"60 second cooldown"}],use_cooldown={seconds:60,cooldown_group:"flame_summoners_staff"},custom_data={flame_summoners_staff:true},consumable={consume_seconds:1,animation:"bow",sound:"entity.blaze.ambient",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:"entity.wither.death"}]}] 1
+tag @s add flame_summoner
+execute if entity @s[team=pvePlayerTeam] run team join pvePlayerTeam @e[tag=summon,type=blaze]
+execute if entity @s[team=pveGroupTeam] run team join pveGroupTeam @e[tag=summon,type=blaze]
+advancement revoke @s only game:flame_summoners_staff
