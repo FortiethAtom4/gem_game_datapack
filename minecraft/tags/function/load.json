@@ -1,5 +1,7 @@
 {
     "values": [
-        
+        "game:utils/pack_loaded",
+        "game:items/shadowheart",
+        "game:items/lionheart"
     ]
 }
