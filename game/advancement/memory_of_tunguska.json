@@ -12,6 +12,6 @@
     }
   },
   "rewards": {
-    "function":"game:memory_of_tunguska/activate"
+    "function":"game:items/memory_of_tunguska"
   }
 }
