@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "custom_data": "{memory_of_tunguska:true}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function":"game:memory_of_tunguska/activate"
+  }
+}

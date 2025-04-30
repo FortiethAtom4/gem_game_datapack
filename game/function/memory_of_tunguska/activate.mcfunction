@@ -1,0 +1,4 @@
+execute at @e[team=!pvePlayerTeam,team=!pveGroupTeam,type=!player,type=!item] if entity @s[distance=0..7] run damage @n 50 minecraft:magic by @s
+execute at @s run particle minecraft:trial_omen ~ ~1 ~ 7 1 7 0.4 250 normal
+give @s wither_rose[use_cooldown={seconds:30,cooldown_group:"memory_of_tunguska"},custom_name={"bold":true,"color":"red","italic":false,"text":"Memory of Tunguska"},lore=[{"color":"white","italic":false,"text":"Deals massive magic damage to nearby enemies on use"},{"color":"white","italic":false,"text":"30 second cooldown"}],consumable={consume_seconds:0.8,animation:"bow",sound:"entity.iron_golem.repair",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:"item.trident.thunder"}]},custom_data={memory_of_tunguska:true}] 1
+advancement revoke @s only game:memory_of_tunguska

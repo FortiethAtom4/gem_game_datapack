@@ -1,0 +1,189 @@
+{
+    "type": "entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "bonus_rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:candle",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:consumable": {
+                    "consume_seconds": 0,
+                    "animation": "none",
+                    "sound": "entity.camel.eat",
+                    "has_consume_particles": true,
+                    "on_consume_effects": [
+                      {
+                        "type": "minecraft:apply_effects",
+                        "effects": [
+                          {
+                            "id": "minecraft:regeneration",
+                            "amplifier": 5,
+                            "duration": 3,
+                            "show_particles": true,
+                            "show_icon": false,
+                            "ambient": false
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "italic": false,
+                    "text": "Edible Candle"
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "color": "green",
+                    "italic": false,
+                    "text": "Consumable:"
+                  },
+                  {
+                    "color": "green",
+                    "italic": false,
+                    "text": "Regeneration+++++ for 0.2s"
+                  },
+                  {
+                    "color": "red",
+                    "italic": false,
+                    "text": "Stackable"
+                  },
+                  {
+                    "color": "dark_gray",
+                    "italic": false,
+                    "text": "made with love"
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "bonus_rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:medium_amethyst_bud",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": {
+                  "min": 8,
+                  "max": 16
+                }
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "italic": false,
+                    "text": "Gem"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "weight": 1,
+            "name": "minecraft:gold_nugget",
+            "functions": [
+              {
+                "function": "set_count",
+                "count": 1
+              },
+              {
+                "function": "set_components",
+                "components": {
+                  "minecraft:consumable": {
+                    "consume_seconds": 0.5,
+                    "animation": "bow",
+                    "sound": "block.amethyst_block.break",
+                    "has_consume_particles": false,
+                    "on_consume_effects": [
+                      {
+                        "type": "minecraft:play_sound",
+                        "sound": "entity.zombie.break_wooden_door"
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "function": "set_name",
+                "name": [
+                  {
+                    "color": "aqua",
+                    "italic": false,
+                    "text": "Unstable Meteorite Fragment"
+                  }
+                ]
+              },
+              {
+                "function": "set_lore",
+                "lore": [
+                  {
+                    "color": "green",
+                    "italic": false,
+                    "text": "Consumable:"
+                  },
+                  {
+                    "color": "green",
+                    "italic": false,
+                    "text": "Deals 10 magic damage to all nearby enemies"
+                  },
+                  {
+                    "color": "green",
+                    "italic": false,
+                    "text": "Gives them Slowness 2 for 10 seconds"
+                  },
+                  {
+                    "color": "red",
+                    "italic": false,
+                    "text": "Stackable"
+                  },
+                  {
+                    "color": "yellow",
+                    "italic": false,
+                    "text": "Disappears when game ends"
+                  }
+                ],
+                "mode": "append"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

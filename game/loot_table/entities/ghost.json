@@ -1,0 +1,123 @@
+{
+  "type": "entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:medium_amethyst_bud",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 5
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "italic": false,
+                  "text": "Gem"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:coal",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 0.25,
+                  "animation": "eat",
+                  "sound": "block.blastfurnace.fire_crackle",
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:absorption",
+                          "amplifier": 0,
+                          "duration": 600,
+                          "show_particles": false,
+                          "show_icon": true
+                        },
+                        {
+                          "id": "minecraft:fire_resistance",
+                          "amplifier": 0,
+                          "duration": 600,
+                          "show_particles": false,
+                          "show_icon": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "italic": false,
+                  "text": "Lustrous Coal"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "color": "green",
+                  "italic": false,
+                  "text": "Consumable"
+                },
+                {
+                  "color": "green",
+                  "italic": false,
+                  "text": "Fire Resistance for 30 seconds"
+                },
+                {
+                  "color": "green",
+                  "italic": false,
+                  "text": "Absorption +4 for 30 seconds"
+                },
+                {
+                  "color": "red",
+                  "italic": false,
+                  "text": "Stackable"
+                },
+                {
+                  "color": "dark_gray",
+                  "italic": false,
+                  "text": "very smooth"
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

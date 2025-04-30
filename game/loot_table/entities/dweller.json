@@ -1,0 +1,304 @@
+{
+  "type": "entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:golden_carrot",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "quality": 1,
+          "name": "minecraft:firefly_bush",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 6
+              }
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "7c0d217e-e563-4d30-b99a-b8d51f40d873",
+                    "type": "water_movement_efficiency",
+                    "amount": 1,
+                    "operation": "add_value",
+                    "slot": "hand"
+                  },
+                  {
+                    "id": "328f9adc-1f21-40ac-a00e-24e73a46fdb1",
+                    "type": "movement_efficiency",
+                    "amount": 1,
+                    "operation": "add_value",
+                    "slot": "hand"
+                  }
+                ],
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "animation": "crossbow",
+                  "sound": "block.sweet_berry_bush.break",
+                  "has_consume_particles": true,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:remove_effects",
+                      "effects": [
+                        "minecraft:slowness"
+                      ]
+                    },
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:speed",
+                          "amplifier": 1,
+                          "duration": 200,
+                          "show_particles": false,
+                          "show_icon": true,
+                          "ambient": false
+                        },
+                        {
+                          "id": "minecraft:invisibility",
+                          "amplifier": 1,
+                          "duration": 200,
+                          "show_particles": false,
+                          "show_icon": true,
+                          "ambient": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "color": "aqua",
+                  "italic": false,
+                  "text": "Suspicious Swamp Bush"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "text": "Grants immunity to movement-slowing effects when held."
+                },
+                {
+                  "color": "green",
+                  "italic": false,
+                  "text": "Consumable:"
+                },
+                {
+                  "color": "green",
+                  "italic": false,
+                  "text": "Cleanse Slowness"
+                },
+                {
+                  "color": "green",
+                  "italic": false,
+                  "text": "Speed++ for 10s"
+                },
+                {
+                  "color": "green",
+                  "italic": false,
+                  "text": "Invisibility for 10s"
+                },
+                {
+                  "color": "red",
+                  "italic": false,
+                  "text": "Stackable"
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "quality": 1,
+          "name": "minecraft:medium_amethyst_bud",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 15,
+                "max": 30
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "italic": false,
+                  "text": "Gem"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "empty",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:leather_boots",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:unbreakable": {},
+                "minecraft:attribute_modifiers": [
+                  {
+                    "id": "779867d9-3ddc-4151-a489-bb6a0e32b491",
+                    "type": "max_health",
+                    "amount": 10,
+                    "operation": "add_value"
+                  },
+                  {
+                    "id": "36536a8c-3c92-456e-9ade-292730778443",
+                    "type": "step_height",
+                    "amount": 0.4,
+                    "operation": "add_value"
+                  },
+                  {
+                    "id": "76788d95-a405-4d78-a1f0-538b54e7437a",
+                    "type": "knockback_resistance",
+                    "amount": 0.5,
+                    "operation": "add_value"
+                  }
+                ],
+                "minecraft:enchantments": {
+                  "minecraft:projectile_protection": 2,
+                  "minecraft:protection": 4
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "bold": false,
+                  "color": "dark_red",
+                  "italic": false,
+                  "text": "Swamp Hut Dweller's Boots"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:heavy_core",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "bold": true,
+                  "color": "dark_red",
+                  "italic": false,
+                  "text": "Boss Core"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "color": "white",
+                  "italic": false,
+                  "text": "Used in the construction of powerful items."
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:large_amethyst_bud",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 3
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "italic": false,
+                  "text": "10 Gems"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
