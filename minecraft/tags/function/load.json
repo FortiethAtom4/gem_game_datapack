@@ -6,6 +6,7 @@
         "game:items/shadowheart/tag",
         "game:items/shadowheart/effect",
         "game:items/bastion/tag",
+        "game:items/book_of_arrows/tag",
         "game:items/book_of_arrows/trigger"
     ]
 }
