@@ -1,0 +1,1 @@
+fill -998 66 2041 -997 67 2041 air replace iron_door
