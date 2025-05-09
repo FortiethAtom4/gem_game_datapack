@@ -1,5 +1,5 @@
 execute at @s run summon minecraft:bee ~1 ~2 ~ {CustomName:{"color":"aqua","text":"Bee"},CustomNameVisible:1b,AngerTime:1000,Health:5f,Tags:[summon],Team:"pvePlayerTeam",attributes:[{id:"minecraft:follow_range",base:100},{id:"minecraft:attack_damage",base:5}]}
-item replace entity @s weapon.mainhand with minecraft:golden_shovel[consumable={consume_seconds:1,animation:"drink",sound:"entity.bee.hurt",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:"entity.bee.loop"}]},custom_name={"color":"yellow","italic":false,"text":"Bee Staff"},lore=[{"color":"white","italic":false,"text":"Summons bees to fight for you"},{"color":"white","italic":false,"text":"Only works in PvE game modes"}],custom_data={bee_staff:true},enchantment_glint_override=true] 1
-execute if entity @s[team=pvePlayerTeam] run team join pvePlayerTeam @e[tag=summon,type=bee]
-execute if entity @s[team=pveGroupTeam] run team join pveGroupTeam @e[tag=summon,type=bee]
+execute as @s run item replace entity @s weapon.mainhand with minecraft:golden_shovel[consumable={consume_seconds:1,animation:"drink",sound:"entity.bee.hurt",has_consume_particles:false,on_consume_effects:[{type:"minecraft:play_sound",sound:"entity.bee.loop"}]},custom_name={"color":"yellow","italic":false,"text":"Bee Staff"},lore=[{"color":"white","italic":false,"text":"Summons bees to fight for you"},{"color":"white","italic":false,"text":"Only works in PvE game modes"}],custom_data={bee_staff:true},enchantment_glint_override=true] 1
+execute if entity @s[team=pvePlayerTeam] run team join pvePlayerTeam @e[tag=summon,type=bee,distance=0..5]
+execute if entity @s[team=pveGroupTeam] run team join pveGroupTeam @e[tag=summon,type=bee,distance=0..5]
 advancement revoke @s only game:bee_staff
