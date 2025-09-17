@@ -1,1 +1,2 @@
 execute at @e[tag=boss,tag=megahog] run summon zombified_piglin ~ ~ ~ {Team:"enemies",Tags:["minion"],CustomName:{"bold":true,"color":"red","text":"HOGMAN"},equipment:{mainhand:{id:"minecraft:golden_sword",count:1,components:{"minecraft:enchantments":{"knockback":2}}}},drop_chances:{mainhand:0.000}}
+schedule function game:bosses/megahog_minions 10s
