@@ -1,1 +1,1 @@
-execute as @a unless items entity @s weapon.* *[minecraft:custom_data={beacon_of_light:true}] run scoreboard players set @s beacon_of_light 0
+execute as @a unless items entity @s weapon.* *[minecraft:custom_data={beacon_of_light:true}] run tag @s remove beacon_of_light
