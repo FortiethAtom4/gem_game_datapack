@@ -6,6 +6,7 @@
         "game:items/shadowheart/tag",
         "game:items/shadowheart/effect",
         "game:items/bastion/tag",
-        "game:bosses/megahog_minions"
+        "game:bosses/megahog_minions",
+        "game:items/beacon_of_light/effect"
     ]
 }
