@@ -1,5 +1,7 @@
 {
     "values": [
-        "game:utils/kill_summons"
+        "game:utils/kill_summons",
+        "game:items/beacon_of_light/activate",
+        "game:items/beacon_of_light/deactivate"
     ]
 }
