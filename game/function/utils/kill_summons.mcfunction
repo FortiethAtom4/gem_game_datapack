@@ -1,1 +1,1 @@
-execute unless entity @e[team=enemies] unless entity @n[name=game_controller,tag=running] unless entity @n[name=group_controller,tag=running] run kill @e[tag=summon]
+execute unless entity @e[team=enemies] unless entity @n[tag=running] run kill @e[tag=summon]
