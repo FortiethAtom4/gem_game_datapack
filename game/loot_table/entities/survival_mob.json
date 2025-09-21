@@ -1,0 +1,119 @@
+{
+  "type": "entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "empty",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:candle",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:consumable": {
+                  "consume_seconds": 0,
+                  "animation": "none",
+                  "sound": "entity.camel.eat",
+                  "has_consume_particles": true,
+                  "on_consume_effects": [
+                    {
+                      "type": "minecraft:apply_effects",
+                      "effects": [
+                        {
+                          "id": "minecraft:regeneration",
+                          "amplifier": 5,
+                          "duration": 3,
+                          "show_particles": true,
+                          "show_icon": false,
+                          "ambient": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "italic": false,
+                  "text": "Edible Candle"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "color": "green",
+                  "italic": false,
+                  "text": "Consumable:"
+                },
+                {
+                  "color": "green",
+                  "italic": false,
+                  "text": "Regeneration+++++ for 0.2s"
+                },
+                {
+                  "color": "red",
+                  "italic": false,
+                  "text": "Stackable"
+                },
+                {
+                  "color": "dark_gray",
+                  "italic": false,
+                  "text": "made with love"
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "quality": 1,
+          "name": "minecraft:medium_amethyst_bud",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 4,
+                "max": 6
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "italic": false,
+                  "text": "Gem"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
