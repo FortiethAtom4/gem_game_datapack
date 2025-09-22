@@ -90,24 +90,25 @@
       "bonus_rolls": 1,
       "entries": [
         {
+          "type": "empty",
+          "weight": 1
+        },
+        {
           "type": "item",
           "weight": 1,
-          "quality": 1,
-          "name": "minecraft:medium_amethyst_bud",
+          "quality": 0,
+          "name": "minecraft:large_amethyst_bud",
           "functions": [
             {
               "function": "set_count",
-              "count": {
-                "min": 4,
-                "max": 6
-              }
+              "count": 1
             },
             {
               "function": "set_name",
               "name": [
                 {
                   "italic": false,
-                  "text": "Gem"
+                  "text": "10 Gems"
                 }
               ]
             }
