@@ -129,7 +129,7 @@
           "type": "item",
           "weight": 1,
           "quality": 1,
-          "name": "minecraft:wither_rose",
+          "name": "minecraft:raw_copper",
           "functions": [
             {
               "function": "set_count",
@@ -156,7 +156,8 @@
                 },
                 "minecraft:custom_data": {
                   "memory_of_tunguska": true
-                }
+                },
+                "minecraft:item_model": "minecraft:wither_rose"
               }
             },
             {
