@@ -3,6 +3,7 @@
         "game:vendors/armorer",
         "game:vendors/boss_core_crafter",
         "game:vendors/misc_trader",
-        "game:vendors/trade-in_dealer"
+        "game:vendors/trade-in_dealer",
+        "game:vendors/mystic_crafter"
     ]
 }
