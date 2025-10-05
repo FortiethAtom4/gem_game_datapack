@@ -1,0 +1,53 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:raw_copper",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 5
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "minecraft:item_model": "minecraft:experience_bottle"
+              }
+            },
+            {
+              "function": "set_name",
+              "name": [
+                {
+                  "bold": true,
+                  "color": "gold",
+                  "italic": false,
+                  "text": "Boss Ichor"
+                }
+              ]
+            },
+            {
+              "function": "set_lore",
+              "lore": [
+                {
+                  "color": "white",
+                  "italic": false,
+                  "text": "Used in the construction of mythical weapons."
+                },
+                {
+                  "color": "dark_gray",
+                  "italic": false,
+                  "text": "The blood of gods."
+                }
+              ],
+              "mode": "append"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
