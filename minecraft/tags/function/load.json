@@ -8,6 +8,7 @@
         "game:items/bastion/tag",
         "game:bosses/megahog_minions",
         "game:items/beacon_of_light/effect",
-        "game:utils/kill_summons"
+        "game:utils/kill_summons",
+        "game:utils/tp_to_game"
     ]
 }
