@@ -12,6 +12,6 @@
     }
   },
   "rewards": {
-    "function":"game:items/flame_summoners_staff"
+    "function":"game:items/flame_summoners_staff/effect"
   }
 }
