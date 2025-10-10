@@ -10,6 +10,7 @@
         "game:items/beacon_of_light/effect",
         "game:utils/kill_summons",
         "game:utils/tp_to_game",
-        "game:items/flame_summoners_staff/fragment"
+        "game:items/flame_summoners_staff/fragment",
+        "game:utils/kill_bees"
     ]
 }
